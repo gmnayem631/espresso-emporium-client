@@ -1,6 +1,25 @@
 import React from "react";
 
 const AddCoffee = () => {
+  const handleAddCoffee = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
+    const newCoffee = Object.fromEntries(formData.entries());
+    console.log(newCoffee);
+    // sending new coffee to server
+    fetch("http://localhost:3000/coffees", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(newCoffee),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
+  };
   return (
     <div className="min-h-screen my-10 bg-[#EAE8E3] rounded-lg">
       <div className="max-w-4xl mx-auto py-10 px-6">
@@ -18,8 +37,8 @@ const AddCoffee = () => {
         </div>
 
         {/* Form Card */}
-        <form className="rounded-lg p-10">
-          {/* Row 1: Name & Chef */}
+        <form onSubmit={handleAddCoffee} className="rounded-lg p-10">
+          {/* Row 1: Name & Quantity */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -34,12 +53,12 @@ const AddCoffee = () => {
             </div>
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">
-                Chef
+                Quantity
               </label>
               <input
-                type="text"
-                name="chef"
-                placeholder="Enter coffee chef"
+                type="number"
+                name="quantity"
+                placeholder="Enter coffee quantity"
                 className="w-full px-4 py-3 rounded border border-gray-200 bg-white text-sm text-gray-500 placeholder-gray-400 focus:outline-none focus:border-amber-400 transition-colors"
               />
             </div>
