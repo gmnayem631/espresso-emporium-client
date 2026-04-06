@@ -4,7 +4,7 @@
     "quantity": 250,
     "supplier": "Highland Coffee",
     "taste": "Floral & Citrus",
-    "category": "Single Origin",
+    "price": 7.99,
     "details": "Bright acidity with notes of jasmine, lemon, and blueberry.",
     "photo": "https://picsum.photos/id/201/600/400"
   },
@@ -13,7 +13,7 @@
     "quantity": 180,
     "supplier": "Andes Coffee Co.",
     "taste": "Nutty & Chocolatey",
-    "category": "Single Origin",
+    "price": 4.99,
     "details": "Balanced body with caramel, almond, and dark chocolate notes.",
     "photo": "https://picsum.photos/id/251/600/400"
   },
@@ -22,7 +22,7 @@
     "quantity": 320,
     "supplier": "South American Beans",
     "taste": "Mild & Sweet",
-    "category": "Single Origin",
+    "price": 6.99,
     "details": "Smooth and sweet with hints of hazelnut and toasted bread.",
     "photo": "https://picsum.photos/id/292/600/400"
   },
@@ -31,7 +31,7 @@
     "quantity": 150,
     "supplier": "East African Roasters",
     "taste": "Bright & Fruity",
-    "category": "Single Origin",
+    "price": 4.99,
     "details": "Intense blackcurrant, tomato, and grapefruit acidity.",
     "photo": "https://picsum.photos/id/312/600/400"
   },
@@ -40,7 +40,7 @@
     "quantity": 200,
     "supplier": "Indonesian Coffee Hub",
     "taste": "Earthy & Spicy",
-    "category": "Single Origin",
+    "price": 5.99,
     "details": "Full body with herbal, dark chocolate and cedar notes.",
     "photo": "https://picsum.photos/id/331/600/400"
   },
@@ -49,7 +49,7 @@
     "quantity": 220,
     "supplier": "Volcano Coffee",
     "taste": "Smoky & Sweet",
-    "category": "Single Origin",
+    "price": "Single Origin",
     "details": "Chocolatey with hints of smoke and brown sugar.",
     "photo": "https://picsum.photos/id/366/600/400"
   },
@@ -58,7 +58,7 @@
     "quantity": 140,
     "supplier": "Central Valley Beans",
     "taste": "Bright & Honey",
-    "category": "Single Origin",
+    "price": "Single Origin",
     "details": "Clean cup with honey, citrus, and subtle floral notes.",
     "photo": "https://picsum.photos/id/411/600/400"
   },
@@ -67,7 +67,7 @@
     "quantity": 500,
     "supplier": "Roma Coffee Roasters",
     "taste": "Bold & Creamy",
-    "category": "Blend",
+    "price": "Blend",
     "details": "Dark roast with rich crema and notes of cocoa and toasted nuts.",
     "photo": "https://picsum.photos/id/431/600/400"
   },
@@ -76,7 +76,7 @@
     "quantity": 80,
     "supplier": "Premium Island Coffee",
     "taste": "Mild & Aromatic",
-    "category": "Single Origin",
+    "price": "Single Origin",
     "details": "Rare mild coffee with clean, sweet, and floral characteristics.",
     "photo": "https://picsum.photos/id/488/600/400"
   },
@@ -85,7 +85,7 @@
     "quantity": 300,
     "supplier": "Arabica Masters",
     "taste": "Winey & Chocolate",
-    "category": "Blend",
+    "price": "Blend",
     "details": "Classic blend with berry-like acidity and chocolate undertones.",
     "photo": "https://picsum.photos/id/501/600/400"
   },
@@ -94,7 +94,7 @@
     "quantity": 400,
     "supplier": "Mekong Coffee",
     "taste": "Strong & Bitter",
-    "category": "Robusta",
+    "price": "Robusta",
     "details": "Bold, heavy body with strong bitterness and peanut notes.",
     "photo": "https://picsum.photos/id/669/600/400"
   },
@@ -103,7 +103,7 @@
     "quantity": 60,
     "supplier": "Rare Beans Collection",
     "taste": "Floral & Tea-like",
-    "category": "Single Origin",
+    "price": "Single Origin",
     "details": "Extremely aromatic with jasmine, bergamot and peach notes.",
     "photo": "https://picsum.photos/id/670/600/400"
   },
@@ -112,7 +112,7 @@
     "quantity": 95,
     "supplier": "Pacific Island Coffee",
     "taste": "Nutty & Buttery",
-    "category": "Single Origin",
+    "price": "Single Origin",
     "details": "Smooth, rich and complex with macadamia nut and caramel flavor.",
     "photo": "https://picsum.photos/id/674/600/400"
   },
@@ -121,7 +121,7 @@
     "quantity": 350,
     "supplier": "Flavored Coffee Co.",
     "taste": "Sweet Vanilla",
-    "category": "Flavored",
+    "price": "Flavored",
     "details": "Medium roast with rich vanilla bean aroma and sweet finish.",
     "photo": "https://picsum.photos/id/683/600/400"
   },
@@ -130,7 +130,7 @@
     "quantity": 280,
     "supplier": "Cocoa & Bean",
     "taste": "Intense Chocolate",
-    "category": "Flavored",
+    "price": "Flavored",
     "details": "Bold espresso with deep dark chocolate and roasted cocoa notes.",
     "photo": "https://picsum.photos/id/870/600/400"
   },
@@ -139,7 +139,7 @@
     "quantity": 260,
     "supplier": "Flavored Coffee Co.",
     "taste": "Creamy & Sweet",
-    "category": "Flavored",
+    "price": "Flavored",
     "details": "Smooth blend with hints of Irish cream and toasted almond.",
     "photo": "https://picsum.photos/id/1015/600/400"
   },
@@ -148,7 +148,7 @@
     "quantity": 170,
     "supplier": "African Fine Coffee",
     "taste": "Fruity & Bright",
-    "category": "Single Origin",
+    "price": "Single Origin",
     "details": "Strawberry, citrus, and caramel with vibrant acidity.",
     "photo": "https://picsum.photos/id/106/600/400"
   },
@@ -157,7 +157,7 @@
     "quantity": 420,
     "supplier": "Ottoman Roasters",
     "taste": "Strong & Cardamom",
-    "category": "Traditional",
+    "price": "Traditional",
     "details": "Finely ground dark roast with traditional Middle Eastern spices.",
     "photo": "https://picsum.photos/id/133/600/400"
   },
@@ -166,7 +166,7 @@
     "quantity": 290,
     "supplier": "Swiss Water Co.",
     "taste": "Mild & Balanced",
-    "category": "Decaf",
+    "price": "Decaf",
     "details": "Naturally decaffeinated with smooth caramel and nutty flavor.",
     "photo": "https://picsum.photos/id/201/600/400"
   },
@@ -175,7 +175,7 @@
     "quantity": 310,
     "supplier": "Holiday Blend Co.",
     "taste": "Spiced & Nutty",
-    "category": "Flavored",
+    "price": "Flavored",
     "details": "Warm cinnamon with toasted hazelnut and sweet vanilla finish.",
     "photo": "https://picsum.photos/id/225/600/400"
   }

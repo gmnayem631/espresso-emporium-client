@@ -9,3 +9,7 @@ body {
 .rancho {
   font-family: "Rancho", cursive;
 }
+
+.active {
+  background-color: #d2b48c;
+}
