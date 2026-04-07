@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 import Swal from "sweetalert2";
 
 const CoffeeCard = ({ coffee }) => {
@@ -57,9 +58,11 @@ const CoffeeCard = ({ coffee }) => {
 
           <div className="flex gap-2">
             {/* Edit Button */}
-            <button className="w-9 h-9 bg-[#F5E8C7] hover:bg-[#e8d4a3] flex items-center justify-center rounded transition-colors">
-              ✏️
-            </button>
+            <Link to={`/updateCoffee/${_id}`}>
+              <button className="w-9 h-9 bg-[#F5E8C7] hover:bg-[#e8d4a3] flex items-center justify-center rounded transition-colors">
+                ✏️
+              </button>
+            </Link>
             {/* Delete Button */}
             <button
               onClick={() => handleDelete(_id)}
@@ -70,6 +73,9 @@ const CoffeeCard = ({ coffee }) => {
           </div>
         </div>
       </div>
+      <Link to={`/coffee/${_id}`} className="btn w-full bg-[#D2B48C]">
+        View Details
+      </Link>
     </div>
   );
 };
