@@ -1,7 +1,7 @@
 import React from "react";
 import Swal from "sweetalert2";
 
-const CoffeeDetails = ({ coffee }) => {
+const CoffeeCard = ({ coffee }) => {
   const { _id, photo, name, supplier, price } = coffee;
   const handleDelete = (id) => {
     console.log(id);
@@ -16,11 +16,23 @@ const CoffeeDetails = ({ coffee }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         console.log(result.isConfirmed);
-        // Swal.fire({
-        //   title: "Deleted!",
-        //   text: "Your file has been deleted.",
-        //   icon: "success",
-        // }); console.log(result.isConfirmed)
+
+        // Deleting a coffee
+        fetch(`http://localhost:3000/coffees/${id}`, {
+          method: "DELETE",
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            if (data.deletedCount) {
+              console.log("after delete", data);
+              Swal.fire({
+                title: "Deleted!",
+                text: "Coffee has been deleted.",
+                icon: "success",
+              });
+              console.log(result.isConfirmed);
+            }
+          });
       }
     });
   };
@@ -62,4 +74,4 @@ const CoffeeDetails = ({ coffee }) => {
   );
 };
 
-export default CoffeeDetails;
+export default CoffeeCard;

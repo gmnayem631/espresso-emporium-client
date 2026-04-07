@@ -1,6 +1,6 @@
 import React from "react";
-import ProductDetails from "./CoffeeDetails";
-import CoffeeDetails from "./CoffeeDetails";
+import ProductDetails from "./CoffeeCard";
+import CoffeeCard from "./CoffeeCard";
 
 const PopularProducts = ({ coffees }) => {
   return (
@@ -21,7 +21,7 @@ const PopularProducts = ({ coffees }) => {
       {/* Products Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {coffees.map((coffee, idx) => (
-          <CoffeeDetails key={idx} coffee={coffee}></CoffeeDetails>
+          <CoffeeCard key={idx} coffee={coffee}></CoffeeCard>
         ))}
       </div>
     </div>
