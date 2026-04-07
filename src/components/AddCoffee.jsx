@@ -103,11 +103,11 @@ const AddCoffee = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">
-                Category
+                Price
               </label>
               <input
-                type="text"
-                name="category"
+                type="number"
+                name="price"
                 placeholder="Enter coffee category"
                 className="w-full px-4 py-3 rounded border border-gray-200 bg-white text-sm text-gray-500 placeholder-gray-400 focus:outline-none focus:border-amber-400 transition-colors"
               />

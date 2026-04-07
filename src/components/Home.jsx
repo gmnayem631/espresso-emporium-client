@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData } from "react-router";
 import PopularProducts from "./PopularProducts";
 
 const Home = () => {
-  const coffees = useLoaderData();
-  console.log(coffees);
+  const initialCoffees = useLoaderData();
+  const [coffees, setCoffees] = useState(initialCoffees);
+
   return (
     <div className="my-10">
-      <PopularProducts coffees={coffees}></PopularProducts>
+      <PopularProducts
+        coffees={coffees}
+        setCoffees={setCoffees}
+      ></PopularProducts>
     </div>
   );
 };

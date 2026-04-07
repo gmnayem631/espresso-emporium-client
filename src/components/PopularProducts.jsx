@@ -2,7 +2,7 @@ import React from "react";
 import ProductDetails from "./CoffeeCard";
 import CoffeeCard from "./CoffeeCard";
 
-const PopularProducts = ({ coffees }) => {
+const PopularProducts = ({ coffees, setCoffees }) => {
   return (
     <div className="max-w-6xl mx-auto py-12 px-6">
       {/* Header */}
@@ -21,7 +21,12 @@ const PopularProducts = ({ coffees }) => {
       {/* Products Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {coffees.map((coffee, idx) => (
-          <CoffeeCard key={idx} coffee={coffee}></CoffeeCard>
+          <CoffeeCard
+            key={idx}
+            coffee={coffee}
+            coffees={coffees}
+            setCoffees={setCoffees}
+          ></CoffeeCard>
         ))}
       </div>
     </div>
