@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDRSzYfSPLpe8Doej1f0SflWoy7tPuImeQ",
-  authDomain: "espresso-emporium-43af7.firebaseapp.com",
-  projectId: "espresso-emporium-43af7",
-  storageBucket: "espresso-emporium-43af7.firebasestorage.app",
-  messagingSenderId: "576479520687",
-  appId: "1:576479520687:web:1f732d1a110d081dce715a",
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId,
 };
 
 // Initialize Firebase
