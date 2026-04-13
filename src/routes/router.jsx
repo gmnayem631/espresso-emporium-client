@@ -15,7 +15,8 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: () => fetch("http://localhost:3000/coffees"),
+        loader: () =>
+          fetch("https://espresso-emporium-server-murex.vercel.app/coffees"),
         Component: Home,
       },
       {
@@ -29,7 +30,9 @@ const router = createBrowserRouter([
       {
         path: "/updateCoffee/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/coffees/${params.id}`),
+          fetch(
+            `https://espresso-emporium-server-murex.vercel.app/coffees/${params.id}`,
+          ),
         Component: UpdateCoffee,
       },
       {
@@ -42,7 +45,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/users",
-        loader: () => fetch("http://localhost:3000/users"),
+        loader: () =>
+          fetch("https://espresso-emporium-server-murex.vercel.app/users"),
         Component: Users,
       },
     ],

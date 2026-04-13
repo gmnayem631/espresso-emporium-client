@@ -19,9 +19,12 @@ const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
         console.log(result.isConfirmed);
 
         // Deleting a coffee
-        fetch(`http://localhost:3000/coffees/${id}`, {
-          method: "DELETE",
-        })
+        fetch(
+          `https://espresso-emporium-server-murex.vercel.app/coffees/${id}`,
+          {
+            method: "DELETE",
+          },
+        )
           .then((res) => res.json())
           .then((data) => {
             if (data.deletedCount) {

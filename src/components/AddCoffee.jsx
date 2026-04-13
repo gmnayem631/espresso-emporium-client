@@ -9,7 +9,7 @@ const AddCoffee = () => {
     const newCoffee = Object.fromEntries(formData.entries());
     console.log(newCoffee);
     // sending new coffee to server
-    fetch("http://localhost:3000/coffees", {
+    fetch("https://espresso-emporium-server-murex.vercel.app/coffees", {
       method: "POST",
       headers: {
         "content-type": "application/json",

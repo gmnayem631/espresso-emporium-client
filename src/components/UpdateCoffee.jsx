@@ -16,7 +16,7 @@ const UpdateCoffee = () => {
     console.log(updatedCoffee);
 
     // updating coffee info to DB
-    fetch(`http://localhost:3000/coffees/${_id}`, {
+    fetch(`https://espresso-emporium-server-murex.vercel.app/coffees/${_id}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(updatedCoffee),

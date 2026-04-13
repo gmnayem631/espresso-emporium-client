@@ -21,7 +21,7 @@ const SignUp = () => {
     createUser(email, password)
       .then((result) => {
         // sending user to DB
-        fetch("http://localhost:3000/users", {
+        fetch("https://espresso-emporium-server-murex.vercel.app/users", {
           method: "POST",
           headers: {
             "content-type": "application/json",
